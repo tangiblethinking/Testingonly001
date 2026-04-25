@@ -103,7 +103,7 @@ export default function Home({ setPage }) {
             fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.14em',
             color: 'white', background: BLUE,
             borderRadius: 9999, padding: '0.25rem 0.75rem', fontWeight: 600,
-          }}>Available for Director Roles</span>
+          }}>Available for Strategic Roles</span>
         </motion.div>
 
         <div style={{ ...MAX, width: '100%' }}>
