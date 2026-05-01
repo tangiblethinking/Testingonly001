@@ -18,6 +18,12 @@ const BORDER   = '#D1D5DB'
 const SURF1    = '#F7F8FA'
 const SURF2    = '#EFF1F5'
 
+// ─────────────────────────────────────────────────────────
+// DESIGN OPS BUTTON URL — set this to your case study URL
+// ─────────────────────────────────────────────────────────
+const DESIGN_OPS_URL = 'https://YOUR_CASE_STUDY_URL_HERE'
+// ─────────────────────────────────────────────────────────
+
 function Counter({ target, suffix = '' }) {
   const [val, setVal] = useState(0)
   const ref = useRef(null)
@@ -40,6 +46,105 @@ function Counter({ target, suffix = '' }) {
     return () => observer.disconnect()
   }, [target])
   return <span ref={ref}>{val}{suffix}</span>
+}
+
+// Reusable inline iframe modal — same pattern as CaseStudyCard's CaseStudyModal
+function InlineModal({ url, label, onClose }) {
+  useEffect(() => {
+    const onKey = (e) => { if (e.key === 'Escape') onClose() }
+    document.addEventListener('keydown', onKey)
+    document.body.style.overflow = 'hidden'
+    return () => { document.removeEventListener('keydown', onKey); document.body.style.overflow = '' }
+  }, [onClose])
+
+  return (
+    <div
+      role="dialog"
+      aria-modal="true"
+      aria-label={label}
+      onClick={(e) => { if (e.target === e.currentTarget) onClose() }}
+      style={{
+        position: 'fixed', inset: 0, zIndex: 200,
+        background: 'rgba(13,17,23,0.70)',
+        display: 'flex', alignItems: 'center', justifyContent: 'center',
+        padding: 'clamp(0.5rem, 2vw, 1rem)',
+        backdropFilter: 'blur(8px)', WebkitBackdropFilter: 'blur(8px)',
+      }}
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 20, scale: 0.98 }}
+        animate={{ opacity: 1, y: 0, scale: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.28, ease: expo }}
+        style={{
+          width: '100%', maxWidth: 1200, height: '92vh',
+          background: '#FFFFFF', borderRadius: 16,
+          overflow: 'hidden', border: '1px solid ' + BORDER,
+          display: 'flex', flexDirection: 'column',
+          boxShadow: '0 24px 80px rgba(0,0,0,0.14)',
+        }}
+      >
+        {/* Toolbar */}
+        <div style={{
+          display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+          padding: '0 1rem', background: SURF1,
+          borderBottom: '1px solid ' + BORDER,
+          flexShrink: 0, height: 48, minHeight: 48,
+        }}>
+          <span style={{
+            fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.12em',
+            color: INK_SEC, fontWeight: 600,
+            overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', marginRight: '1rem',
+          }}>{label}</span>
+          <button
+            onClick={onClose}
+            aria-label="Close"
+            style={{
+              width: 32, height: 32, borderRadius: '50%',
+              background: SURF2, border: '1px solid ' + BORDER,
+              color: INK_BODY, fontSize: '0.9rem', cursor: 'pointer',
+              flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'center',
+              transition: 'background 0.2s',
+            }}
+            onMouseEnter={e => e.currentTarget.style.background = '#D1D5DB'}
+            onMouseLeave={e => e.currentTarget.style.background = SURF2}
+          >✕</button>
+        </div>
+        <iframe
+          src={url}
+          title={label}
+          style={{ width: '100%', flex: 1, border: 'none', display: 'block' }}
+          allow="fullscreen"
+        />
+      </motion.div>
+    </div>
+  )
+}
+
+// Pill button — matches the design in the screenshots
+function PillButton({ onClick }) {
+  const [hov, setHov] = useState(false)
+  return (
+    <button
+      onClick={onClick}
+      onMouseEnter={() => setHov(true)}
+      onMouseLeave={() => setHov(false)}
+      style={{
+        display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44,
+        fontSize: '0.7rem', fontFamily: '"DM Sans", Helvetica Neue, sans-serif',
+        letterSpacing: '0.06em', fontWeight: 500,
+        color: hov ? INK : INK_SEC,
+        border: '1.5px solid ' + (hov ? INK_SEC : BORDER),
+        borderRadius: 9999,
+        padding: '0.65rem 1.25rem',
+        background: 'transparent',
+        cursor: 'pointer',
+        transition: 'all 0.2s',
+      }}
+    >
+      Design Ops <span style={{ fontSize: '0.9rem' }}>→</span>
+    </button>
+  )
 }
 
 const metrics = [
@@ -76,6 +181,8 @@ const SP  = 'clamp(3.5rem,7vw,6.5rem) clamp(1rem,4vw,2.5rem)'
 const MAX = { maxWidth: 1400, margin: '0 auto' }
 
 export default function Home({ setPage }) {
+  const [designOpsOpen, setDesignOpsOpen] = useState(false)
+
   return (
     <main id="main-content">
 
@@ -200,6 +307,7 @@ export default function Home({ setPage }) {
       </section>
 
       {/* ── ABOUT TEASER ─────────────────────────────────── */}
+      {/* IMAGE 2: "Design Ops →" button appears at the bottom of this section */}
       <section aria-label="About" style={{ background: '#FFFFFF', padding: SP }}>
         <div style={{ ...MAX, display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))', gap: 'clamp(2rem,5vw,5rem)', alignItems: 'start' }}>
           <SlideIn>
@@ -224,16 +332,20 @@ export default function Home({ setPage }) {
                 I'm drawn to companies where UX maturity is still an aspiration, not a given. That's where I do my best work.
               </p>
             </FadeUp>
+            {/* ── ABOUT TEASER BUTTONS — matches Image 2 layout ── */}
             <FadeUp delay={0.26}>
-              <button onClick={() => go(setPage, 'about')} style={{
-                display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44,
-                fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.14em', fontWeight: 600,
-                color: INK, border: '1.5px solid ' + BORDER, borderRadius: 9999,
-                padding: '0.75rem 1.5rem', background: 'transparent', cursor: 'pointer', transition: 'all 0.25s',
-              }}
-              onMouseEnter={e => { e.currentTarget.style.background = INK; e.currentTarget.style.color = 'white'; e.currentTarget.style.borderColor = INK }}
-              onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = INK; e.currentTarget.style.borderColor = BORDER }}
-              >Full Profile →</button>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem', alignItems: 'center' }}>
+                <PillButton onClick={() => setDesignOpsOpen(true)} />
+                <button onClick={() => go(setPage, 'about')} style={{
+                  display: 'inline-flex', alignItems: 'center', gap: 8, minHeight: 44,
+                  fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.14em', fontWeight: 600,
+                  color: INK, border: '1.5px solid ' + BORDER, borderRadius: 9999,
+                  padding: '0.75rem 1.5rem', background: 'transparent', cursor: 'pointer', transition: 'all 0.25s',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.background = INK; e.currentTarget.style.color = 'white'; e.currentTarget.style.borderColor = INK }}
+                onMouseLeave={e => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = INK; e.currentTarget.style.borderColor = BORDER }}
+                >Full Profile →</button>
+              </div>
             </FadeUp>
           </div>
         </div>
@@ -264,11 +376,19 @@ export default function Home({ setPage }) {
       </section>
 
       {/* ── CAPABILITIES ─────────────────────────────────── */}
+      {/* IMAGE 1: "Design Ops →" button appears top-right of this section header */}
       <section aria-label="Capabilities" style={{ background: '#FFFFFF', padding: SP, borderTop: '1px solid ' + BORDER }}>
         <div style={MAX}>
           <FadeUp>
-            <p style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: INK_TERT, marginBottom: 8, fontWeight: 600 }}>Capabilities</p>
-            <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.5rem,3.5vw,3rem)', color: INK, fontWeight: 500, marginBottom: 'clamp(2rem,4vw,3.5rem)' }}>What I get done</h2>
+            {/* Header row: label + title on left, Design Ops button on right */}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'clamp(2rem,4vw,3.5rem)', flexWrap: 'wrap', gap: '1rem' }}>
+              <div>
+                <p style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: INK_TERT, marginBottom: 8, fontWeight: 600 }}>Capabilities</p>
+                <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.5rem,3.5vw,3rem)', color: INK, fontWeight: 500, margin: 0 }}>What I get done</h2>
+              </div>
+              {/* ── CAPABILITIES BUTTON — matches Image 1 top-right ── */}
+              <PillButton onClick={() => setDesignOpsOpen(true)} />
+            </div>
           </FadeUp>
           <hr className="divider-light" />
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(260px,1fr))' }}>
@@ -331,6 +451,15 @@ export default function Home({ setPage }) {
           </FadeUp>
         </div>
       </section>
+
+      {/* ── DESIGN OPS MODAL — shared by both buttons ─────── */}
+      {designOpsOpen && (
+        <InlineModal
+          url={DESIGN_OPS_URL}
+          label="Design Ops — Case Study"
+          onClose={() => setDesignOpsOpen(false)}
+        />
+      )}
 
     </main>
   )
