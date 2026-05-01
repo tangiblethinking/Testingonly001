@@ -21,7 +21,7 @@ const SURF2    = '#EFF1F5'
 // ─────────────────────────────────────────────────────────
 // DESIGN OPS BUTTON URL — set this to your case study URL
 // ─────────────────────────────────────────────────────────
-const DESIGN_OPS_URL = 'https://YOUR_CASE_STUDY_URL_HERE'
+const DESIGN_OPS_URL = 'https://opdesignoprojo.vercel.app/'
 // ─────────────────────────────────────────────────────────
 
 function Counter({ target, suffix = '' }) {
