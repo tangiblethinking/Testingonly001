@@ -329,7 +329,7 @@ export default function Home({ setPage }) {
             </FadeUp>
             <FadeUp delay={0.18}>
               <p style={{ fontSize: '0.95rem', color: INK_BODY, lineHeight: 1.75, marginBottom: '2rem' }}>
-                I'm drawn to companies where UX maturity is still an aspiration, not a given. That's where I do my best work.
+               
               </p>
             </FadeUp>
             {/* ── ABOUT TEASER BUTTONS — matches Image 2 layout ── */}
