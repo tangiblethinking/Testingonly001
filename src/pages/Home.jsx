@@ -421,9 +421,9 @@ export default function Home({ setPage }) {
           </FadeUp>
           <FadeUp delay={0.1}>
             <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.5rem,3.5vw,3rem)', color: INK, fontWeight: 500, lineHeight: 1.08, marginBottom: '2rem' }}>
-              If your company needs design to{' '}
-              <em style={{ color: BLUE, fontStyle: 'normal' }}>grow up</em>,
-              let's find out if I'm the right person to lead that.
+              If your Design Operations needs to {' '}
+              <em style={{ color: BLUE, fontStyle: 'normal' }}>level up</em>,
+              I have experience to align teams and efforts.
             </h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
               <a href="mailto:c.kenreigh@gmail.com" style={{
