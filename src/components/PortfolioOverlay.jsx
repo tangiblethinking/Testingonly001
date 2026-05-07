@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react'
 
 const BLUE  = '#3B82F6'
-const URL   = 'https://appprotoneov001ai.vercel.app'
+const URL   = 'https://www.uxapex.com/portfolioa32'
 
 const NAV_LINKS = [
   { label: 'Case Studies', page: 'work' },
