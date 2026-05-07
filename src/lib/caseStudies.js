@@ -8,7 +8,7 @@ export const caseStudies = [
     outcome: 'Consolidated 6 fragmented tools into a unified design system, cutting team inefficiency by 60% and increasing sprint delivery velocity by 35%.',
     tags:    ['Design Ops', 'Systems Thinking', 'Team Leadership', 'AI Tooling'],
     color:   '#3B82F6',
-    href:    'https://design-ops-case-study.vercel.app/',
+    href:    'https://www.uxapex.com/designops',
   },
   {
     id:      'plexus-ecomm',
@@ -19,7 +19,7 @@ export const caseStudies = [
     outcome: 'Redesigned the complete e-commerce experience across US and 3 international regions — reducing checkout abandonment by 43% through data-driven UX and mobile-first design.',
     tags:    ['e-Commerce', 'UX Strategy', 'Mobile-First', 'A/B Testing'],
     color:   '#FF6B35',
-    href:    'https://director-case-study-ux-bgoals.vercel.app/',
+    href:    'https://www.uxapex.com/ecomm',
   },
   {
     id:      'ux-transformation',
@@ -30,7 +30,7 @@ export const caseStudies = [
     outcome: 'Elevated design from a service function to a strategic driver — securing C-suite buy-in and delivering measurable outcomes across e-commerce, mining, and self-storage.',
     tags:    ['UX Strategy', 'Executive Influence', 'Cross-Functional', 'Workshops'],
     color:   '#8B5CF6',
-    href:    'https://company-ux-transform.vercel.app/',
+    href:    'https://www.uxapex.com/uxtrans',
   },
   {
     id:      'Executive Industry Action',
@@ -41,7 +41,7 @@ export const caseStudies = [
     outcome: 'Products, Companies, and online experiences like web apps and digital products are being left out of discovery from users LLM use. Those who adapt will have longer competitive gains verse delaying.',
     tags:    ['Consumer LLM use', 'Discover Experience', 'AI Strategy'],
     color:   '#10B981',
-    href:    'https://teststudynew.vercel.app/',
+    href:    'https://www.uxapex.com/discovery',
   },
   {
     id:      'E-commerce Persona Generator',
@@ -52,7 +52,7 @@ export const caseStudies = [
     outcome: 'Enabled the organization to operate as a coordinated, insight-driven engine to optimize the performance of brand discovery, member expansion, and subsciption volumes.',
     tags:    ['Quality in = quality out', 'Systems Governance', 'Cross Functional Strategy'],
     color:   '#FFC300',
-    href:    'https://persongratadata.vercel.app/',
+    href:    'https://www.uxapex.com/persona',
   },
    {
     id:      'Maturity through onboarding Methodologies',
@@ -63,6 +63,6 @@ export const caseStudies = [
     outcome: 'A unified "source of truth" that creates bi-lateral accountability, ensures consistency of a product, and improves communications between design, engineering, product, and business units.',
     tags:    ['Start with quality = End with quality', 'Product Governance', 'Cross Functional Accountability'],
     color:   '#E00004',
-    href:    'https://opodesignonovo.vercel.app/',
+    href:    'https://www.uxapex.com/collaboration',
   },
 ]
