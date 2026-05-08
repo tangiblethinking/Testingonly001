@@ -57,8 +57,8 @@ export const caseStudies = [
    {
     id:      'Maturity through onboarding Methodologies',
     index:   '06',
-    title:   'Sacling Design Efforts | Delivering and Shipping Outcomes Faster',
-    company: 'Design Operations • optimizing workflows, tools, and team culture',
+    title:   'Scaling Company Efforts | Delivering and Shipping Outcomes Faster',
+    company: 'Design Operations • Optimizing workflows, tools, and team culture',
     year:    '2025',
     outcome: 'A unified "source of truth" that creates bi-lateral accountability, ensures consistency of a product, and improves communications between design, engineering, product, and business units.',
     tags:    ['Start with quality = End with quality', 'Product Governance', 'Cross Functional Accountability'],
