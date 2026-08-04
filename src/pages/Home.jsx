@@ -159,13 +159,13 @@ const capabilities = [
   {
     verb: 'Lead', color: BLUE,
     headline: 'I grow design organizations.',
-    body: 'I build the team infrastructure that makes great design scalable — recruiting, mentoring, structuring critique, and creating a culture where designers do their best work. At Plexus, I led 5 designers across UX, content, and interaction with direct ownership of their growth, allocation, and quality.',
+    body: 'Mentoring the team infrastructure to makes great design scalable — applying methodologies for recruiting, mentoring, structuring critique, and creating a culture where designers do their best work.',
     items: ['Team structure & hiring', 'Design critique systems', '1:1 development & coaching', 'Cross-functional alignment', 'Design maturity roadmaps'],
   },
   {
     verb: 'Build', color: WARM,
     headline: 'I architect systems, not screens.',
-    body: 'Design systems, tooling ecosystems, process frameworks, research repositories — I build the infrastructure that lets teams move fast without fragmenting. I consolidated 6 tools into one unified platform and introduced AI-augmented workflows that increased delivery velocity by 35%.',
+    body: 'Design systems, tooling ecosystems, process frameworks, research repositories — I build the infrastructure that lets teams move fast without fragmenting.',
     items: ['Design systems architecture', 'Design operations frameworks', 'AI-augmented workflows', 'Coded prototypes & tokens', 'Component library governance'],
   },
   {
@@ -246,7 +246,7 @@ export default function Home({ setPage }) {
             style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1rem', marginTop: 'clamp(1.5rem,4vw,3rem)' }}
           >
             <p style={{ fontSize: '0.9rem', color: INK_BODY, maxWidth: 380, lineHeight: 1.65, margin: 0 }}>
-              Director of UX & Product Design · 11+ years across e-commerce, enterprise, and industrial.
+              Directing UX & Digital Product Design · 11+ years across Ed-Tech, E-commerce, Enterprise, and Industrial Solutions
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
               <button onClick={() => go(setPage, 'work')} style={{
@@ -324,7 +324,7 @@ export default function Home({ setPage }) {
             </FadeUp>
             <FadeUp delay={0.1}>
               <p style={{ fontSize: '0.95rem', color: INK_BODY, lineHeight: 1.75, marginBottom: '1rem' }}>
-                I've spent 11+ years translating complex problems into intuitive digital experiences — across e-commerce platforms, enterprise tools, and industrial applications. At Plexus Worldwide, I lead a 5-person design org responsible for US and 3 international markets, cutting checkout abandonment by 43% and restructuring our entire workflow around AI-augmented tooling.
+                Daily resolutions that turn complex problems into achieveable digital experiences — across e-commerce platforms, enterprise tools, and industrial applications.
               </p>
             </FadeUp>
             <FadeUp delay={0.18}>
@@ -421,9 +421,9 @@ export default function Home({ setPage }) {
           </FadeUp>
           <FadeUp delay={0.1}>
             <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.5rem,3.5vw,3rem)', color: INK, fontWeight: 500, lineHeight: 1.08, marginBottom: '2rem' }}>
-              If your Design Operations needs to {' '}
-              <em style={{ color: BLUE, fontStyle: 'normal' }}>level up</em>,
-              I have experience to align teams and efforts.
+              Where ever there is a problem to solve {' '}
+              <em style={{ color: BLUE, fontStyle: 'normal' }}>I speak up</em>,
+              to put attention on the actions that will bring needed solutions.
             </h2>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.75rem' }}>
               <a href="mailto:c.kenreigh@gmail.com" style={{
