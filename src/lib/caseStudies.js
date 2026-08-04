@@ -67,7 +67,7 @@ export const caseStudies = [
   },
   {
     id:      'Legal and UX collaboration',
-    index:   '06',
+    index:   '07',
     title:   'The Ts & Cs through UX | Shaping effortless consent',
     company: 'Design Operations • Legal and Compliance Regulations',
     year:    '2026',
@@ -75,5 +75,16 @@ export const caseStudies = [
     tags:    ['Legal Compliance', 'Effortless Experience', 'Business Accountability'],
     color:   '#10B981',
     href:    'https://www.uxapex.com/laws',
+  },
+  {
+    id:      'Virtual Labs for Online Learning',
+    index:   '08',
+    title:   'Zero to One Product delivery',
+    company: 'Design Operations • Ecucation Technology',
+    year:    '2014-2016',
+    outcome: 'Lead all design and prototyping efforts to build template for a Virtual Labs environment for online learning',
+    tags:    ['Ed-Tech, 'Student Level Learning', 'Instructor Based Oversight'],
+    color:   '#8B5CF6',
+    href:    'https://www.uxapex.com/vlabs',
   },
 ]
