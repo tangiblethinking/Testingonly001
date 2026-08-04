@@ -72,7 +72,7 @@ export const caseStudies = [
     company: 'Design Operations • Legal and Compliance Regulations',
     year:    '2026',
     outcome: 'Increased compliance with new and existing members through easy opt-in experiences.',
-    tags:    ['Start with quality = End with quality', 'Product Governance', 'Cross Functional Accountability'],
+    tags:    ['Legal Compliance', 'Effortless Experience', 'Business Accountability'],
     color:   '#10B981',
     href:    'https://www.uxapex.com/laws',
   },
