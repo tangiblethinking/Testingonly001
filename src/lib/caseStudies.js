@@ -83,7 +83,7 @@ export const caseStudies = [
     company: 'Design Operations • Ecucation Technology',
     year:    '2014-2016',
     outcome: 'Lead all design and prototyping efforts to build template for a Virtual Labs environment for online learning',
-    tags:    ['Ed-Tech, 'Student Level Learning', 'Instructor Based Oversight'],
+    tags:    ['Ed-Tech', 'Student Level Learning', 'Instructor Based Oversight'],
     color:   '#8B5CF6',
     href:    'https://www.uxapex.com/vlabs',
   },
