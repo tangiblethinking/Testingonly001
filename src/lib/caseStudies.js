@@ -66,7 +66,7 @@ export const caseStudies = [
     href:    'https://www.uxapex.com/collaboration',
   },
   {
-    id:      'The T's & C's with UX',
+    id:      'The Ts & Cs through UX',
     index:   '07',
     title:   'Scaling Company Efforts | Delivering and Shipping Outcomes Faster',
     company: 'Design Operations • Optimizing workflows, tools, and team culture',
