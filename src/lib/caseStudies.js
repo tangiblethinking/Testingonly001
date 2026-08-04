@@ -74,6 +74,6 @@ export const caseStudies = [
     outcome: 'A unified "source of truth" that creates bi-lateral accountability, ensures consistency of a product, and improves communications between design, engineering, product, and business units.',
     tags:    ['Start with quality = End with quality', 'Product Governance', 'Cross Functional Accountability'],
     color:   '#E00004',
-    href:    'https://www.uxapex.com/laws',
+    href:    'https://uxlegal-9iaaq69rf-mrkhrisk-5412s-projects.vercel.app/',
   },
 ]
