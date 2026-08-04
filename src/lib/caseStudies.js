@@ -65,15 +65,4 @@ export const caseStudies = [
     color:   '#E00004',
     href:    'https://www.uxapex.com/collaboration',
   },
-  {
-    id:      'The Ts & Cs through UX',
-    index:   '07',
-    title:   'Scaling Company Efforts | Delivering and Shipping Outcomes Faster',
-    company: 'Design Operations • Optimizing workflows, tools, and team culture',
-    year:    '2025',
-    outcome: 'A unified "source of truth" that creates bi-lateral accountability, ensures consistency of a product, and improves communications between design, engineering, product, and business units.',
-    tags:    ['Start with quality = End with quality', 'Product Governance', 'Cross Functional Accountability'],
-    color:   '#E00004',
-    href:    'https://uxlegal-9iaaq69rf-mrkhrisk-5412s-projects.vercel.app/',
-  },
 ]
