@@ -221,7 +221,7 @@ export default function Home({ setPage }) {
           >Christopher Kenreigh</motion.p>
 
           {[
-            { text: 'I design. I build.',             color: INK,      delay: 0.45 },
+            { text: 'I research. I design. I build.',             color: INK,      delay: 0.45 },
             { text: 'Experiences',               color: BLUE,     delay: 0.55, italic: true },
             { text: 'for digital products',       color: INK_SEC,  delay: 0.63 },
             { text: 'and spaces.',              color: INK_SEC,  delay: 0.70 },
