@@ -21,7 +21,7 @@ export function Footer({ setPage }) {
             Christopher Kenreigh
           </p>
           <p style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.12em', color: INK_SEC }}>
-            Director of UX & Product Design
+            UX & Product Design Engineer
           </p>
         </div>
 
