@@ -221,10 +221,10 @@ export default function Home({ setPage }) {
           >Christopher Kenreigh</motion.p>
 
           {[
-            { text: 'I build design',             color: INK,      delay: 0.45 },
-            { text: 'operations',               color: BLUE,     delay: 0.55, italic: true },
-            { text: 'that turn complexity',       color: INK_SEC,  delay: 0.63 },
-            { text: 'into clarity.',              color: INK_SEC,  delay: 0.70 },
+            { text: 'I design. I build',             color: INK,      delay: 0.45 },
+            { text: 'experiences',               color: BLUE,     delay: 0.55, italic: true },
+            { text: 'for digital products',       color: INK_SEC,  delay: 0.63 },
+            { text: 'and spaces.',              color: INK_SEC,  delay: 0.70 },
           ].map(({ text, color, delay, italic }) => (
             <div key={text} style={{ overflow: 'visible', paddingBottom: '0.12em' }}>
               <motion.div
