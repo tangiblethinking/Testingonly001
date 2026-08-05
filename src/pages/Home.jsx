@@ -217,14 +217,14 @@ export default function Home({ setPage }) {
           <motion.p
             initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.35, ease: expo }}
-            style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.2em', color: INK_TERT, marginBottom: '1.25rem', fontWeight: 600 }}
+            style={{ fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '0.2em', color: INK_TERT, marginBottom: '1.25rem', fontWeight: 600 }}
           >Christopher Kenreigh</motion.p>
 
           {[
-            { text: 'I research. I design. I build.',             color: INK,      delay: 0.45 },
+            { text: 'A researcher. A designer. A builder. A partner.',             color: INK,      delay: 0.45 },
             { text: 'Experiences',               color: BLUE,     delay: 0.55, italic: true },
-            { text: 'for digital products',       color: INK_SEC,  delay: 0.63 },
-            { text: 'and spaces.',              color: INK_SEC,  delay: 0.70 },
+            { text: 'for digital products',       color: INK,  delay: 0.63 },
+            { text: 'and spaces.',              color: INK,  delay: 0.70 },
           ].map(({ text, color, delay, italic }) => (
             <div key={text} style={{ overflow: 'visible', paddingBottom: '0.12em' }}>
               <motion.div
