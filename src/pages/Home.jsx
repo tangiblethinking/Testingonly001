@@ -246,7 +246,7 @@ export default function Home({ setPage }) {
             style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1rem', marginTop: 'clamp(1.5rem,4vw,3rem)' }}
           >
             <p style={{ fontSize: '0.9rem', color: INK_BODY, maxWidth: 380, lineHeight: 1.65, margin: 0 }}>
-              Directing UX & Digital Product Design · 11+ years across Ed-Tech, E-commerce, Enterprise, and Industrial Solutions
+              Engineering and Designing Digital Products · 11+ years across Ed-Tech, E-commerce, Enterprise, and Industrial Solutions
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
               <button onClick={() => go(setPage, 'work')} style={{
