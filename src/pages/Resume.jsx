@@ -56,7 +56,7 @@ const experience = [
     period: '2021 – 2022', location: 'Phoenix, AZ · Hybrid',
     bullets: [
       'Increased POS completion rates 75% through redesigned checkout and payment flows.',
-      'Improved e-commerce fulfillment experience, contributing to 25% operational improvement.',
+      'Improved e-commerce fulfillment experience 25% through data-driven UX optimizations.',
     ],
   },
   {
@@ -75,6 +75,7 @@ const experience = [
     bullets: [
       'Increased product ease of use 65% through iterative UX research and redesign of education platforms.',
       'Ensured WCAG and ADA compliance across all digital learning products.',
+      'Senior and Lead Designer for engineering Virtual Lab Environments.',
     ],
   },
 ]
@@ -92,11 +93,14 @@ export default function Resume({ setPage }) {
       <div style={{ ...MAX, padding: 'clamp(1rem,4vw,2.5rem)', paddingTop: 'clamp(5rem,10vw,8rem)', background: SURF1, borderBottom: '1px solid ' + BORDER }}>
         <FadeUp>
           <p style={{ ...LBL, marginBottom: 12 }}>Resume</p>
-          <h1 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: 'clamp(2.8rem,8vw,7rem)', color: INK, fontWeight: 500, lineHeight: 0.93, letterSpacing: '-0.03em', marginBottom: '1.25rem' }}>
+          <h1 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(2.8rem,8vw,7rem)', color: INK, fontWeight: 500, lineHeight: 0.93, letterSpacing: '-0.03em', marginBottom: '1.25rem' }}>
             Experience
           </h1>
-          <p style={{ fontSize: '0.95rem', color: INK_BODY, maxWidth: 520, lineHeight: 1.7 }}>
-            11+ years designing digital products across e-commerce, enterprise, industrial, and education.
+          <p style={{ fontSize: '0.95rem', color: INK_BODY, maxWidth: 520, lineHeight: 1.7, marginBottom: '0.5rem' }}>
+            Principal of UX & Product Design · USA / Remote / Office
+          </p>
+          <p style={{ fontSize: '0.95rem', color: INK_BODY, maxWidth: 560, lineHeight: 1.7 }}>
+            Design Principal with 11+ years leading advanced systems thinking, stakeholder management, enterprise-level product strategy, and design direction.
           </p>
         </FadeUp>
       </div>
@@ -116,7 +120,7 @@ export default function Resume({ setPage }) {
                 <p style={{ fontSize: '0.65rem', color: INK_TERT, textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 600 }}>{job.location}</p>
               </div>
               <div>
-                <h3 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: 'clamp(1.1rem,2vw,1.35rem)', color: INK, fontWeight: 500, marginBottom: 4 }}>{job.title}</h3>
+                <h3 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.1rem,2vw,1.35rem)', color: INK, fontWeight: 500, marginBottom: 4 }}>{job.title}</h3>
                 {job.url ? (
                   <a href={job.url} target="_blank" rel="noopener noreferrer" style={{ fontSize: '0.875rem', color: BLUE, textDecoration: 'none', marginBottom: 16, display: 'inline-block' }}>{job.company} ↗</a>
                 ) : (
@@ -162,7 +166,7 @@ export default function Resume({ setPage }) {
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(180px,1fr))', gap: '1.5rem' }}>
             <div />
             <div>
-              <h3 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: '1.35rem', color: INK, fontWeight: 500, marginBottom: 4 }}>Bachelor of Arts</h3>
+              <h3 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: '1.35rem', color: INK, fontWeight: 500, marginBottom: 4 }}>Bachelor of Art</h3>
               <p style={{ color: INK_BODY, marginBottom: 4 }}>The Art Institute of Phoenix</p>
               <p style={{ fontSize: '0.82rem', color: INK_SEC }}>2002 – 2005 · Phoenix, AZ</p>
             </div>
