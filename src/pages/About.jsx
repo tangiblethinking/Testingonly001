@@ -20,11 +20,11 @@ const philosophy = [
 
 const timeline = [
   { period: '2024 – Present', role: 'Principal Product Designer',    company: 'Plexus Worldwide',    location: 'Phoenix, AZ · Office', color: BLUE,    wins: ['43% reduction in checkout abandonment', 'Launched 3 international e-commerce regions', 'Consolidated 6 tools → 1 unified design system', '35% sprint velocity increase via LLM tooling'] },
-  { period: '2023 – 2024',    role: 'Freelance UX Consultant', company: 'Independent Practice', location: 'Remote',               color: '#6C3EC5', wins: ['UX strategy & design systems consulting', 'Deepened AI-augmented design workflow expertise'] },
+  { period: '2026 – 2026',    role: 'Freelance UX Consultant', company: 'Independent Practice', location: 'Remote',               color: '#6C3EC5', wins: ['UX strategy & design systems consulting', 'Deepened AI-augmented design workflow expertise'] },
   { period: '2022 – 2023',    role: 'Senior Product Designer', company: 'Freeport-McMoRan',    location: 'Phoenix, AZ · Hybrid', color: WARM,    wins: ['30% improvement in mining worker efficiency', 'Scalable UI design system across 3 platforms', '5 major releases approved through C-suite roadmaps'] },
   { period: '2021 – 2022',    role: 'Senior Product Designer', company: 'OpenTech Alliance',   location: 'Phoenix, AZ · Hybrid', color: WARM,    wins: ['75% increase in POS completion rates', '25% e-commerce fulfillment improvement'] },
   { period: '2020 – 2021',    role: 'UX Design Operator',      company: 'Siemens',              location: 'Phoenix, AZ · Remote', color: '#596880', wins: ['50% reduction in internal data dissemination', 'Unified design systems across 4 industrial projects'] },
-  { period: '2014 – 2019',    role: 'Senior UX Designer',      company: 'Glynlyon Inc',         location: 'Phoenix, AZ · Office', color: '#596880', wins: ['65% increase in product ease of use', 'WCAG and ADA compliance across all platforms'] },
+  { period: '2014 – 2019',    role: 'Senior UX Designer',      company: 'Glynlyon Inc',         location: 'Phoenix, AZ · Office', color: '#596880', wins: ['65% increase in product ease of use', 'WCAG and ADA compliance across all platforms', 'Senior and Lead Designer for engineering Virtual Lab Environments'] },
 ]
 
 export default function About({ setPage }) {
@@ -36,11 +36,11 @@ export default function About({ setPage }) {
         <div style={MAX}>
           <FadeUp>
             <p style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: BLUE, marginBottom: 12, fontWeight: 600 }}>About</p>
-            <h1 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: 'clamp(2.8rem,8vw,7rem)', color: INK, fontWeight: 500, lineHeight: 1.15, letterSpacing: '-0.03em', marginBottom: '1.25rem' }}>
+            <h1 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(2.8rem,8vw,7rem)', color: INK, fontWeight: 500, lineHeight: 1.15, letterSpacing: '-0.03em', marginBottom: '1.25rem' }}>
               Christopher<br />Kenreigh
             </h1>
             <p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', color: INK_BODY, maxWidth: 560, lineHeight: 1.65, fontWeight: 400 }}>
-              Director of UX & Product Design. I build design organizations that turn complex product problems into measurable revenue and retention.
+              UX & Product Design Principal. Aligning design outcomes with executive business goals, conducting complex discovery, and shaping long-term product roadmaps.
             </p>
           </FadeUp>
         </div>
@@ -52,7 +52,7 @@ export default function About({ setPage }) {
           <FadeUp>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: '1.5rem', marginBottom: 'clamp(2rem,4vw,3rem)' }}>
               <p style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: INK_TERT, fontWeight: 600 }}>Design Philosophy</p>
-              <h2 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: 'clamp(1.3rem,2.5vw,2.2rem)', color: INK, fontWeight: 500 }}>How I think about leading design</h2>
+              <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.3rem,2.5vw,2.2rem)', color: INK, fontWeight: 500 }}>How I think about leading design</h2>
             </div>
           </FadeUp>
           <hr className="divider-light" />
@@ -66,7 +66,7 @@ export default function About({ setPage }) {
                   height: '100%',
                 }}>
                   <span style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.12em', color: INK_TERT, display: 'block', marginBottom: 12, fontWeight: 600 }}>{p.n}</span>
-                  <h3 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: 'clamp(1.1rem,2vw,1.35rem)', color: INK, fontWeight: 500, marginBottom: '0.65rem', lineHeight: 1.25 }}>{p.title}</h3>
+                  <h3 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.1rem,2vw,1.35rem)', color: INK, fontWeight: 500, marginBottom: '0.65rem', lineHeight: 1.25 }}>{p.title}</h3>
                   <p style={{ fontSize: '0.875rem', color: INK_BODY, lineHeight: 1.7 }}>{p.body}</p>
                 </div>
               </FadeUp>
@@ -79,7 +79,7 @@ export default function About({ setPage }) {
       <div style={{ background: SURF1, padding: SP, borderTop: '1px solid ' + BORDER }}>
         <div style={MAX}>
           <FadeUp>
-            <h2 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: 'clamp(1.4rem,3vw,2.5rem)', color: INK, fontWeight: 500, marginBottom: 'clamp(2rem,4vw,3rem)' }}>
+            <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.4rem,3vw,2.5rem)', color: INK, fontWeight: 500, marginBottom: 'clamp(2rem,4vw,3rem)' }}>
               11+ years across e-commerce, enterprise & industrial
             </h2>
           </FadeUp>
@@ -102,7 +102,7 @@ export default function About({ setPage }) {
                     <span style={{ width: 6, height: 6, borderRadius: '50%', background: t.color, flexShrink: 0 }} />
                     <p style={{ fontSize: '0.65rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: INK_SEC, margin: 0, fontWeight: 600 }}>{t.company}</p>
                   </div>
-                  <h3 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: 'clamp(1.1rem,2vw,1.35rem)', color: INK, fontWeight: 500, marginBottom: '0.65rem' }}>{t.role}</h3>
+                  <h3 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.1rem,2vw,1.35rem)', color: INK, fontWeight: 500, marginBottom: '0.65rem' }}>{t.role}</h3>
                   <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
                     {t.wins.map(w => (
                       <li key={w} style={{ display: 'flex', alignItems: 'flex-start', gap: 8, marginBottom: 6, fontSize: '0.875rem', color: INK_BODY }}>
@@ -123,13 +123,13 @@ export default function About({ setPage }) {
         <div style={{ ...MAX, display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: 'clamp(2rem,5vw,4rem)' }}>
           <FadeUp>
             <p style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: INK_TERT, marginBottom: 18, fontWeight: 600 }}>Education</p>
-            <h3 style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: '1.4rem', color: INK, fontWeight: 500, marginBottom: 4 }}>Bachelor of Arts</h3>
+            <h3 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: '1.4rem', color: INK, fontWeight: 500, marginBottom: 4 }}>Bachelor of Art</h3>
             <p style={{ color: INK_BODY, marginBottom: 4 }}>The Art Institute of Phoenix</p>
             <p style={{ fontSize: '0.82rem', color: INK_SEC }}>2002 – 2005 · Phoenix, AZ</p>
           </FadeUp>
           <FadeUp delay={0.1}>
             <p style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: INK_TERT, marginBottom: 18, fontWeight: 600 }}>Contact</p>
-            <a href="mailto:c.kenreigh@gmail.com" style={{ fontFamily: '\"Cormorant Garamond\",serif', fontSize: '1.4rem', color: INK, display: 'block', marginBottom: 6, textDecoration: 'none', transition: 'color 0.2s' }}
+            <a href="mailto:c.kenreigh@gmail.com" style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: '1.4rem', color: INK, display: 'block', marginBottom: 6, textDecoration: 'none', transition: 'color 0.2s' }}
               onMouseEnter={e => e.currentTarget.style.color = BLUE}
               onMouseLeave={e => e.currentTarget.style.color = INK}
             >c.kenreigh@gmail.com</a>
