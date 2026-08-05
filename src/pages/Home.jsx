@@ -246,7 +246,7 @@ export default function Home({ setPage }) {
             style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '1rem', marginTop: 'clamp(1.5rem,4vw,3rem)' }}
           >
             <p style={{ fontSize: '0.9rem', color: INK_BODY, maxWidth: 380, lineHeight: 1.65, margin: 0 }}>
-              Engineering and Designing Digital Products · 11+ years across Ed-Tech, E-commerce, Enterprise, and Industrial Solutions
+              Organizational direction for Digital Products · 11+ years across Ed-Tech, E-commerce, Enterprise, and Industrial Solutions
             </p>
             <div style={{ display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
               <button onClick={() => go(setPage, 'work')} style={{
@@ -318,15 +318,13 @@ export default function Home({ setPage }) {
           <div>
             <FadeUp>
               <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.5rem,3.5vw,3rem)', color: INK, lineHeight: 1.08, marginBottom: '1.75rem', fontWeight: 500 }}>
-                A design engineer who measures success in{' '}
+                A design principal who measures success in{' '}
                 <em style={{ color: WARM, fontStyle: 'normal' }}>business outcomes</em>, not deliverables.
               </h2>
             </FadeUp>
             <FadeUp delay={0.1}>
               <p style={{ fontSize: '0.95rem', color: INK_BODY, lineHeight: 1.75, marginBottom: '1rem' }}>
-                Daily resolutions that turn complex problems into achieveable digital experiences — across e-commerce platforms, enterprise tools, and industrial applications.
-              </p>
-            </FadeUp>
+                 Owning major strategic product initiatives, multi-platform user experience visions, and mentoring design teams.
             <FadeUp delay={0.18}>
               <p style={{ fontSize: '0.95rem', color: INK_BODY, lineHeight: 1.75, marginBottom: '2rem' }}>
                
