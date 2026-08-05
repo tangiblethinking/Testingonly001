@@ -1,18 +1,18 @@
 export const caseStudies = [
   {
-    id:      'design-ops',
-    index:   '08',
-    title:   'Building a Design Operations Function from the Ground Up',
-    company: 'Plexus Worldwide',
-    year:    '2026',
-    outcome: 'Consolidated 6 fragmented tools into a unified design system, cutting team inefficiency by 60% and increasing sprint delivery velocity by 35%.',
-    tags:    ['Design Ops', 'Systems Thinking', 'Team Leadership', 'AI Tooling'],
-    color:   '#3B82F6',
-    href:    'https://www.uxapex.com/designops',
+    id:      'Virtual Labs for Online Learning',
+    index:   '01',
+    title:   'Zero to One Product delivery',
+    company: 'Design Operations • Ecucation Technology',
+    year:    '2014-2016',
+    outcome: 'Lead all design and prototyping efforts to build template for a Virtual Labs environment for online learning',
+    tags:    ['Ed-Tech', 'Student Level Learning', 'Instructor Based Oversight'],
+    color:   '#8B5CF6',
+    href:    'https://www.uxapex.com/vlabs',
   },
   {
     id:      'plexus-ecomm',
-    index:   '02',
+    index:   '03',
     title:   'E-Commerce Modernization: From Friction to Conversion',
     company: 'Plexus Worldwide',
     year:    '2026',
@@ -23,7 +23,7 @@ export const caseStudies = [
   },
   {
     id:      'ux-transformation',
-    index:   '03',
+    index:   '07',
     title:   'Leading a Company-Wide UX Transformation',
     company: 'Multi-Company · 2021–2026',
     year:    '2021–2026',
@@ -54,7 +54,7 @@ export const caseStudies = [
     color:   '#FFC300',
     href:    'https://www.uxapex.com/persona',
   },
-   {
+  {
     id:      'Maturity through onboarding Methodologies',
     index:   '06',
     title:   'Scaling Company Efforts | Delivering and Shipping Outcomes Faster',
@@ -67,7 +67,7 @@ export const caseStudies = [
   },
   {
     id:      'Legal and UX collaboration',
-    index:   '07',
+    index:   '02',
     title:   'The Ts & Cs through UX | Shaping effortless consent',
     company: 'Design Operations • Legal and Compliance Regulations',
     year:    '2026',
@@ -77,14 +77,14 @@ export const caseStudies = [
     href:    'https://www.uxapex.com/laws',
   },
   {
-    id:      'Virtual Labs for Online Learning',
-    index:   '01',
-    title:   'Zero to One Product delivery',
-    company: 'Design Operations • Ecucation Technology',
-    year:    '2014-2016',
-    outcome: 'Lead all design and prototyping efforts to build template for a Virtual Labs environment for online learning',
-    tags:    ['Ed-Tech', 'Student Level Learning', 'Instructor Based Oversight'],
-    color:   '#8B5CF6',
-    href:    'https://www.uxapex.com/vlabs',
-  },
-]
+    id:      'design-ops',
+    index:   '08',
+    title:   'Building a Design Operations Function from the Ground Up',
+    company: 'Plexus Worldwide',
+    year:    '2026',
+    outcome: 'Consolidated 6 fragmented tools into a unified design system, cutting team inefficiency by 60% and increasing sprint delivery velocity by 35%.',
+    tags:    ['Design Ops', 'Systems Thinking', 'Team Leadership', 'AI Tooling'],
+    color:   '#3B82F6',
+    href:    'https://www.uxapex.com/designops',
+  }
+].sort((a, b) => a.index.localeCompare(b.index));
