@@ -40,7 +40,7 @@ export default function About({ setPage }) {
               Christopher<br />Kenreigh
             </h1>
             <p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', color: INK_BODY, maxWidth: 560, lineHeight: 1.65, fontWeight: 400 }}>
-            UX & Product Design Engineer. I build solutions that turn complex problems into easy, measurable revenue and retention experiences.
+            UX & Product Design Principal. Aligning design outcomes with executive business goals, conducting complex discovery, and shaping long-term product roadmaps.
             </p>
           </FadeUp>
         </div>
