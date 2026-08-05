@@ -1,7 +1,7 @@
 export const caseStudies = [
   {
     id:      'design-ops',
-    index:   '01',
+    index:   '08',
     title:   'Building a Design Operations Function from the Ground Up',
     company: 'Plexus Worldwide',
     year:    '2026',
@@ -78,7 +78,7 @@ export const caseStudies = [
   },
   {
     id:      'Virtual Labs for Online Learning',
-    index:   '08',
+    index:   '01',
     title:   'Zero to One Product delivery',
     company: 'Design Operations • Ecucation Technology',
     year:    '2014-2016',
