@@ -24,7 +24,7 @@ export default function Work({ setPage }) {
               Case Studies
             </h1>
             <p style={{ fontSize: '0.95rem', color: INK_BODY, maxWidth: 480, lineHeight: 1.7 }}>
-              Four studies in design leadership — each documenting the organizational problem, strategic approach, and measurable business outcome.
+              Highlighted studies in design leadership — each documenting the organizational problem, strategic approach, and measurable business outcome.
             </p>
           </FadeUp>
         </div>
