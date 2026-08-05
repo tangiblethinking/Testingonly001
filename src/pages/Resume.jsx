@@ -19,7 +19,7 @@ const LBL = {
 
 const experience = [
   {
-    title: 'Principal UX and Product Deigner',
+    title: 'Principal UX and Product Designer',
     company: 'Plexus Worldwide', url: 'https://www.plexusworldwide.com',
     period: '05/2024 – Present', location: 'Phoenix, AZ · Office',
     bullets: [
