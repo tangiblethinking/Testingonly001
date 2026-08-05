@@ -318,7 +318,7 @@ export default function Home({ setPage }) {
           <div>
             <FadeUp>
               <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.5rem,3.5vw,3rem)', color: INK, lineHeight: 1.08, marginBottom: '1.75rem', fontWeight: 500 }}>
-                A design executive who measures success in{' '}
+                A design engineer who measures success in{' '}
                 <em style={{ color: WARM, fontStyle: 'normal' }}>business outcomes</em>, not deliverables.
               </h2>
             </FadeUp>
