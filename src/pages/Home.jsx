@@ -169,7 +169,7 @@ const capabilities = [
     items: ['Design systems architecture', 'Design operations frameworks', 'AI-augmented workflows', 'Coded prototypes & tokens', 'Component library governance'],
   },
   {
-    verb: 'Ship', color: '#6C3EC5',
+    verb: 'Ship', color: '#55A763',
     headline: 'I translate strategy into outcomes.',
     body: 'From product vision to shipped product, I own the full end-to-end — user research, journey mapping, stakeholder alignment, A/B testing, and post-launch optimization. I speak business: retention, conversion, abandonment, and revenue.',
     items: ['UX strategy & roadmapping', 'e-Commerce optimization', 'Stakeholder presentations', 'Usability & A/B testing', 'Multi-region product launches'],
