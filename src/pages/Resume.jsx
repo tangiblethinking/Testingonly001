@@ -19,7 +19,7 @@ const LBL = {
 
 const experience = [
   {
-    title: 'UX Design Director',
+    title: 'Principal UX and Product Deigner',
     company: 'Plexus Worldwide', url: 'https://www.plexusworldwide.com',
     period: '05/2024 – Present', location: 'Phoenix, AZ · Office',
     bullets: [
@@ -40,7 +40,7 @@ const experience = [
     ],
   },
   {
-    title: 'Senior Product Manager',
+    title: 'Senior Product Designer',
     company: 'Freeport-McMoRan', url: 'https://www.freeportmcmoran.com',
     period: '08/2022 – 10/2023', location: 'Phoenix, AZ · Hybrid',
     bullets: [
@@ -51,7 +51,7 @@ const experience = [
     ],
   },
   {
-    title: 'Senior Product Manager',
+    title: 'Senior Product Designer',
     company: 'OpenTech Alliance', url: 'https://www.opentechalliance.com',
     period: '05/2021 – 08/2022', location: 'Phoenix, AZ · Hybrid',
     bullets: [
@@ -102,7 +102,7 @@ export default function Resume({ setPage }) {
               Christopher Kenreigh
             </h1>
             <p style={{ color: INK_BODY, fontSize: '0.95rem' }}>
-              Director of UX & Product Design · USA / Remote / Office
+              Principal of UX & Product Design · USA / Remote / Office
             </p>
           </FadeUp>
           <a
@@ -132,11 +132,7 @@ export default function Resume({ setPage }) {
           </div>
           <hr className="divider-light" style={{ marginBottom: 'clamp(1.5rem,3vw,2.5rem)' }} />
           <p style={{ fontSize: '1rem', color: INK_BODY, lineHeight: 1.75, maxWidth: 800, marginBottom: '1.25rem' }}>
-            Design executive with 11+ years leading end-to-end digital product experiences across e-commerce,
-            industrial, and enterprise environments. Built and directed 5-person design teams, architected
-            multi-platform design systems, and delivered measurable outcomes: 43% reduction in checkout
-            abandonment, 60% efficiency gain through tool consolidation, 35% velocity increase via
-            AI-augmented workflows.
+            Design Principal with 11+ years leading advanced systems thinking, stakeholder management, enterprise-level product strategy, and design direction.
           </p>
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, marginBottom: 'clamp(2.5rem,5vw,4rem)' }}>
             {['Director of UX', 'Design Operations', 'Team Leadership', 'e-Commerce UX', 'AI-Augmented Workflows'].map(t => (
