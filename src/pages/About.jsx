@@ -19,12 +19,12 @@ const philosophy = [
 ]
 
 const timeline = [
-  { period: '2024 – Present', role: 'UX Design Director',    company: 'Plexus Worldwide',    location: 'Phoenix, AZ · Office', color: BLUE,    wins: ['43% reduction in checkout abandonment', 'Launched 3 international e-commerce regions', 'Consolidated 6 tools → 1 unified design system', '35% sprint velocity increase via LLM tooling'] },
+  { period: '2024 – Present', role: 'Principal Product Designer',    company: 'Plexus Worldwide',    location: 'Phoenix, AZ · Office', color: BLUE,    wins: ['43% reduction in checkout abandonment', 'Launched 3 international e-commerce regions', 'Consolidated 6 tools → 1 unified design system', '35% sprint velocity increase via LLM tooling'] },
   { period: '2026 – 2026',    role: 'Freelance UX Consultant', company: 'Independent Practice', location: 'Remote',               color: '#6C3EC5', wins: ['UX strategy & design systems consulting', 'Deepened AI-augmented design workflow expertise'] },
   { period: '2022 – 2023',    role: 'Senior Product Designer', company: 'Freeport-McMoRan',    location: 'Phoenix, AZ · Hybrid', color: WARM,    wins: ['30% improvement in mining worker efficiency', 'Scalable UI design system across 3 platforms', '5 major releases approved through C-suite roadmaps'] },
   { period: '2021 – 2022',    role: 'Senior Product Designer', company: 'OpenTech Alliance',   location: 'Phoenix, AZ · Hybrid', color: WARM,    wins: ['75% increase in POS completion rates', '25% e-commerce fulfillment improvement'] },
   { period: '2020 – 2021',    role: 'UX Design Operator',      company: 'Siemens',              location: 'Phoenix, AZ · Remote', color: '#596880', wins: ['50% reduction in internal data dissemination', 'Unified design systems across 4 industrial projects'] },
-  { period: '2014 – 2019',    role: 'Senior UX Designer',      company: 'Glynlyon Inc',         location: 'Phoenix, AZ · Office', color: '#596880', wins: ['65% increase in product ease of use', 'WCAG and ADA compliance across all platforms'] },
+  { period: '2014 – 2019',    role: 'Senior UX Designer',      company: 'Glynlyon Inc',         location: 'Phoenix, AZ · Office', color: '#596880', wins: ['65% increase in product ease of use', 'WCAG and ADA compliance across all platforms', 'Senior and Lead Designer for engineering Virtual Lab Environments'] },
 ]
 
 export default function About({ setPage }) {
@@ -40,7 +40,7 @@ export default function About({ setPage }) {
               Christopher<br />Kenreigh
             </h1>
             <p style={{ fontSize: 'clamp(0.95rem,2vw,1.1rem)', color: INK_BODY, maxWidth: 560, lineHeight: 1.65, fontWeight: 400 }}>
-              Director of UX & Product Design. I build design organizations that turn complex product problems into measurable revenue and retention.
+            UX & Product Design Engineer. I build solutions that turn complex problems into easy, measurable revenue and retention experiences.
             </p>
           </FadeUp>
         </div>
@@ -52,7 +52,7 @@ export default function About({ setPage }) {
           <FadeUp>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit,minmax(220px,1fr))', gap: '1.5rem', marginBottom: 'clamp(2rem,4vw,3rem)' }}>
               <p style={{ fontSize: '0.6rem', textTransform: 'uppercase', letterSpacing: '0.15em', color: INK_TERT, fontWeight: 600 }}>Design Philosophy</p>
-              <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.3rem,2.5vw,2.2rem)', color: INK, fontWeight: 500 }}>How I think about leading design</h2>
+              <h2 style={{ fontFamily: '"Cormorant Garamond",serif', fontSize: 'clamp(1.3rem,2.5vw,2.2rem)', color: INK, fontWeight: 500 }}>A practical methodology with honesty</h2>
             </div>
           </FadeUp>
           <hr className="divider-light" />
