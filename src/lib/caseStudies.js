@@ -3,7 +3,7 @@ export const caseStudies = [
     id:      'Virtual Labs for Online Learning',
     index:   '01',
     title:   'Zero to One Product delivery',
-    company: 'Design Operations • Ecucation Technology',
+    company: 'Glylyon • Design Operations • Ecucation Technology',
     year:    '2014-2016',
     outcome: 'Lead all design and prototyping efforts to build template for a Virtual Labs environment for online learning',
     tags:    ['Ed-Tech', 'Student Level Learning', 'Instructor Based Oversight'],
@@ -46,7 +46,7 @@ export const caseStudies = [
   {
     id:      'E-commerce Persona Generator',
     index:   '05',
-    title:   'Getting quality from quantity | Scaling Revenue Generator from Behavorial Metrics',
+    title:   'Plexus Worldwide • Scaling Revenue Generator from Behavorial Metrics',
     company: 'E-commerce • Retail',
     year:    '2025 - 2026',
     outcome: 'Enabled the organization to operate as a coordinated, insight-driven engine to optimize the performance of brand discovery, member expansion, and subsciption volumes.',
